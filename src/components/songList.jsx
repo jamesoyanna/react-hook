@@ -9,8 +9,8 @@ const SongList = () => {
         { title: 'this wild darkness', id: 3 }
     ])
    
-    const addSong = () => {
-        setSongs([...songs, { title: "New song", id: uuid() }]);
+    const addSong = (title) => {
+        setSongs([...songs, { title, id: uuid() }]);
     }
 
     return ( 
@@ -25,7 +25,7 @@ const SongList = () => {
             );
         })}
           </ul>
-        <NewSongForm />
+        <NewSongForm addSong = {addSong} />
       </div>
 
      );
