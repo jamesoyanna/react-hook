@@ -6,6 +6,7 @@ const NewSongForm = ({addSong})=>{
     const handleSubmit = (e)=>{
       e.preventDefault()
       addSong(title)
+      setTitle('')
     }
 
     return(
