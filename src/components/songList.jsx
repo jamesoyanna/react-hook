@@ -16,8 +16,8 @@ const SongList = () => {
     }
 
    useEffect(()=>{
-       console.log("use eefect runs", songs);
-   })
+       console.log("use effect runs", songs);
+   }, [songs])
 
     return ( 
       <div className="song-list">
